@@ -7,9 +7,9 @@ function ExpenseItem(props) {
   const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
-    setTitle('Updated!');
-    console.log(title);
-  }
+    // Schedules this state update for the next refresh.
+    setTitle("Updated!");
+  };
 
   return (
     <Card className="expense-item">
@@ -20,7 +20,6 @@ function ExpenseItem(props) {
       </div>
       <button onClick={clickHandler}>Change Title</button>
     </Card>
-
   );
 }
 
