@@ -2,7 +2,7 @@ import React from "react";
 
 import "./ExpensesFilter.css";
 
-const ExpensesFilter = (props) => {
+function ExpensesFilter(props) {
   const updateSelectedValue = (event) => {
     props.onSelectFilter(event.target.value);
   };
@@ -20,6 +20,6 @@ const ExpensesFilter = (props) => {
       </div>
     </div>
   );
-};
+}
 
 export default ExpensesFilter;
